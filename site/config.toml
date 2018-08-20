@@ -55,7 +55,7 @@ googleAnalytics = "UA-124193081-1"
 
 [params]
 site_theme = "grey"
-custom_css = [ "custom.scss" ]
+custom_css = [ "css/override.css" ]
 site_layout = "row"
 enable_jumbo = "false"
 # truncate = "100"
