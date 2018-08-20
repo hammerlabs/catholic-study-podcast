@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+     xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0"
+    >
+  <channel>
+    <title>Catholic Study Podcast</title>
+    <atom:link href="/episode/index.xml" rel="self" type="application/rss+xml" />
+    <link>/</link>
+    <description>Teaching through the Bible verse by verse and relying on the fathers of the church and the magisterium for interpretation.</description>
+    <lastBuildDate>Sun, 19 Aug 2018 19:30:25 -0700</lastBuildDate>
+    <sy:updatePeriod>hourly</sy:updatePeriod>
+    <sy:updateFrequency>1</sy:updateFrequency>
+    <language>en-us</language>
+    <copyright>Copyright 2018 Kevin Hammer</copyright>
+    <itunes:subtitle>Catholic Bible Study Podcast</itunes:subtitle>
+    <itunes:author>Kevin Hammer</itunes:author>
+    <itunes:type>episodic</itunes:type>
+    <googleplay:author>Kevin Hammer</googleplay:author>
+    <googleplay:email>galactichammer@gmail.com</googleplay:email>
+    <itunes:summary>Teaching through the Bible verse by verse and relying on the fathers of the church and the magisterium for interpretation.</itunes:summary>
+    <googleplay:description>Teaching through the Bible verse by verse and relying on the fathers of the church and the magisterium for interpretation.</googleplay:description>
+    <itunes:owner>
+      <itunes:name>Kevin Hammer</itunes:name>
+      <itunes:email>galactichammer@gmail.com</itunes:email>
+    </itunes:owner>
+    <itunes:image href="https://catholicstudypodcast.com/apple-touch-icon.png" />
+    <googleplay:image href="https://catholicstudypodcast.com/apple-touch-icon.png"></googleplay:image>
+    <image>
+      <url>https://catholicstudypodcast.com/apple-touch-icon.png</url>
+      <title>Catholic Study Podcast</title>
+      <link>/</link>
+    </image>
+    <itunes:category text="Technology">
+      <itunes:category text="Software How-To" /><itunes:category text="Tech News" /></itunes:category>
+    <generator>Hugo -- gohugo.io</generator>
+        <item>
+          <title>Introduction to Ruth</title>
+          <link>/001-ruth-1/</link>
+          <pubDate>Sun, 19 Aug 2018 19:30:25 -0700 </pubDate>
+          <dc:creator></dc:creator>
+          <guid>https://media.blubrry.com/arresteddevops/content.blubrry.com/arresteddevops/###.mp3</guid>
+          <itunes:author>Kevin Hammer</itunes:author>
+          
+        <itunes:summary>We begin our study series with the book of Ruth in the Old Testament.</itunes:summary>
+        <description>We begin our study series with the book of Ruth in the Old Testament.</description>
+        <googleplay:description>We begin our study series with the book of Ruth in the Old Testament.</googleplay:description>
+        <content:encoded><![CDATA[]]></content:encoded><itunes:image href="/img/episodes/famine.jpg"></itunes:image>
+          <googleplay:image href="/img/episodes/famine.jpg"></googleplay:image><enclosure url="https://media.blubrry.com/arresteddevops/content.blubrry.com/arresteddevops/###.mp3"  type="audio/mpeg" /><itunes:explicit>no</itunes:explicit>
+          <googleplay:explicit>no</googleplay:explicit></item></channel>
+</rss>
