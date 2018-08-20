@@ -70,7 +70,7 @@ copyright_notice = "Copyright 2018 [Kevin Hammer]"
 # mailchimp_subscribe = "//arresteddevops.us3.list-manage.com/subscribe/post?u=5e4cbcac996bb9df25f970a89&amp;id=154fa76bcc"
 #rss_subscribe = "http://feed.com/myfeed" #only set this if you don't want to use the built-in feed
 description = "Teaching through the Bible verse by verse and relying on the fathers of the church and the magisterium for interpretation."
-media_prefix = "https://catholicstudypodcast.com/episodes/"
+media_prefix = "https://s3-us-west-2.amazonaws.com/catholicstudypodcast/episodes/"
   [params.feed]
     copyright = "Copyright 2018 Kevin Hammer" #do not use markdown in this field; it is used in the feed
     itunes_subtitle = "Catholic Bible Study Podcast" #no markdown or HTML
