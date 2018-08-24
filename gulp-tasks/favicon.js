@@ -16,7 +16,7 @@ gulp.task("favicon-build", ["check-for-favicon-update", "generate-favicon", "inj
 // package (see the check-for-favicon-update task below).
 gulp.task("generate-favicon", function(done) {
   realFavicon.generateFavicon({
-    masterPicture: "src/img/favicon.png",
+    masterPicture: "src/img/logo.png",
     dest: "site/static",
     iconsPath: "/",
     design: {
