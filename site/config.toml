@@ -60,7 +60,6 @@ site_layout = "row"
 enable_jumbo = "false"
 # truncate = "100"
 about_logo = "/img/kevin.jpg"
-copyright_notice = "Copyright 2018 [Kevin Hammer]"
 # itunes_subscribe = "http://itunes.apple.com/us/podcast/arrested-devops/id773888088?mt=2&uo=4&at=11lsCi"
 # android_subscribe = "http://subscribeonandroid.com/feeds.podtrac.com/VGAulpN7MY1U"
 # google_play_subscribe = "https://goo.gl/app/playmusic?ibi=com.google.PlayMusic&isi=691797987&ius=googleplaymusic&link=https://play.google.com/music/m/Ihj4yege3lfmp3vs5yoopgxijpi?t%3DArrested_DevOps"
@@ -69,19 +68,21 @@ copyright_notice = "Copyright 2018 [Kevin Hammer]"
 # pocketcasts_subscribe = "http://pcasts.in/feed/feeds.soundcloud.com/users/soundcloud:users:203144248/sounds.rss"
 # mailchimp_subscribe = "//arresteddevops.us3.list-manage.com/subscribe/post?u=5e4cbcac996bb9df25f970a89&amp;id=154fa76bcc"
 #rss_subscribe = "http://feed.com/myfeed" #only set this if you don't want to use the built-in feed
-description = "Teaching through the Bible verse by verse and relying on the fathers of the church and the magisterium for interpretation."
-media_prefix = "https://s3-us-west-2.amazonaws.com/catholicstudypodcast/episodes/"
+description = "Study sacred scripture with a focus on historical context and interpretation. What did the scriptures mean to those to whom it was written? That's the key to knowing what it means to us today!"
+media_prefix = "https://media.catholicstudypodcast.com/episodes/"
   [params.feed]
-    copyright = "Copyright 2018 Kevin Hammer" #do not use markdown in this field; it is used in the feed
-    itunes_subtitle = "Catholic Bible Study Podcast" #no markdown or HTML
+  # itunes rss details: https://help.apple.com/itc/podcasts_connect/#/itcb54353390
+    feed_base_url = "https://www.catholicstudypodcast.com/"
+    itunes_type = "episodic" # episodic or serial
+    itunes_subtitle = "Historical, Literal, Catholic." #no markdown or HTML
     itunes_author = "Kevin Hammer" #no markdown or HTML
-    itunes_summary = "Teaching through the Bible verse by verse and relying on the fathers of the church and the magisterium for interpretation." # Limited to 4000 characters or less, plain text, no HTML
+    itunes_summary = "Study sacred scripture with a focus on historical context and interpretation. What did the scriptures mean to those to whom it was written? That's the key to knowing what it means to us today!" # Limited to 4000 characters or less, plain text, no HTML
     itunes_owner_name = "Kevin Hammer"
     itunes_owner_email = "galactichammer@gmail.com" #contains the e-mail address that will be used to contact the owner of the Podcast for communication specifically about their Podcast on iTunes. It will not be publicly displayed on iTunes.
-    itunes_image = "https://catholicstudypodcast.com/apple-touch-icon.png" #fqdn to the image art for your podcast
-    itunes_top_category = "Technology"
-    itunes_first_sub_category = "Software How-To"
-    itunes_second_sub_category = "Tech News"
+    itunes_image = "https://www.catholicstudypodcast.com/apple-touch-icon.png" #fqdn to the image art for your podcast
+    itunes_top_category = "Religion & Spirituality"
+    itunes_first_sub_category = "Christianity"
+    # itunes_second_sub_category = "Tech News"
     language = "en-us"
 
   [params.social]

@@ -63,3 +63,6 @@ bower_components/
 
 node_modules/
 dist/
+site/public/
+media/**/*.mp3
+media/**/*.m4a

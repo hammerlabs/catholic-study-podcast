@@ -3,11 +3,9 @@
   <div class="col-md-12">
     <nav class = "navbar navbar-default navbar_footer">
     <ul class="nav navbar-nav navbar-right">
-      {{ if (isset .Site.Params "copyright_notice" ) }}
-        <li>
-          <p class = "footer_copyright">{{ .Site.Params.copyright_notice | markdownify}}</p>
-        </li>
-      {{ end }}
+      <li>
+        <p class = "footer_copyright">Copyright {{ dateFormat "2006" .Date }} {{ .Site.Params.feed.itunes_author }}</p>
+      </li>
       <li>
         &nbsp;
       </li>
