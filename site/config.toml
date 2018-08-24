@@ -1,8 +1,9 @@
 baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
-title = "Catholic Study Podcast"
+Title = "Catholic Study Podcast"
 theme = "castanet"
+disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
 paginate = "9"
 
@@ -54,6 +55,9 @@ googleAnalytics = "UA-124193081-1"
 #     parent = "resources"
 
 [params]
+author = "Kevin Hammer"
+description = "Study sacred scripture with a focus on historical context and interpretation. What did the scriptures mean to those to whom it was written? That's the key to knowing what it means to us today!"
+site_description = "Study sacred scripture with a focus on historical context and interpretation. What did the scriptures mean to those to whom it was written? That's the key to knowing what it means to us today!"
 site_theme = "grey"
 custom_css = [ "css/override.css" ]
 site_layout = "row"
@@ -68,7 +72,6 @@ about_logo = "/img/kevin.jpg"
 # pocketcasts_subscribe = "http://pcasts.in/feed/feeds.soundcloud.com/users/soundcloud:users:203144248/sounds.rss"
 # mailchimp_subscribe = "//arresteddevops.us3.list-manage.com/subscribe/post?u=5e4cbcac996bb9df25f970a89&amp;id=154fa76bcc"
 #rss_subscribe = "http://feed.com/myfeed" #only set this if you don't want to use the built-in feed
-description = "Study sacred scripture with a focus on historical context and interpretation. What did the scriptures mean to those to whom it was written? That's the key to knowing what it means to us today!"
 media_prefix = "https://media.catholicstudypodcast.com/episodes/"
   [params.feed]
   # itunes rss details: https://help.apple.com/itc/podcasts_connect/#/itcb54353390

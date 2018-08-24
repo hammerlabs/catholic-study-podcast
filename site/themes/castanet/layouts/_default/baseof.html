@@ -4,11 +4,15 @@
 {{ partial "head.html" . }}
 </head>
 
-<body lang="{{ .Site.Params.Lang }}">
-{{ partial "header.html" . }}
+<body lang="{{ .Site.Language }}">
+
+{{ block "header" . }}{{ partial "header" . }}{{end}}
+
 <div class="container middle_container">
-  {{ block "main" . }}
-      <!-- The part of the page that begins to differ between templates -->
-  {{ end }}
+{{ block "main" . }}{{end}}
 </div> <!-- end middle_container -->
-{{ partial "footer.html" . }}
+
+{{ block "footer" . }}{{ partial "footer" . }}{{end}}
+
+</body>
+</html>

@@ -13,11 +13,14 @@ import webpackConfig from "./webpack.conf";
 import requireDir from "require-dir";
 requireDir("./gulp-tasks");
 
+var config = require("./gulp.config.json");
+
 const browserSync = BrowserSync.create();
 
 // Hugo arguments
 const hugoArgsDefault = ["-d", "../dist", "-s", "site", "-v"];
 const hugoArgsPreview = ["--buildDrafts", "--buildFuture"];
+const hugoArgsProduction = ["--baseURL", config.env.prod.baseURL];
 
 // Development tasks
 gulp.task("hugo", (cb) => buildSite(cb));
@@ -28,7 +31,7 @@ gulp.task("server", ["hugo", "css", "js", "fonts"], (cb) => runServer(cb));
 gulp.task("server-preview", ["hugo-preview", "css", "js", "fonts"], (cb) => runServer(cb));
 
 // Build/production tasks
-gulp.task("build", ["css", "js", "fonts"], (cb) => buildSite(cb, [], "production"));
+gulp.task("build", ["css", "js", "fonts"], (cb) => buildSite(cb, hugoArgsProduction, "production"));
 gulp.task("build-preview", ["css", "js", "fonts"], (cb) => buildSite(cb, hugoArgsPreview, "production"));
 
 // Compile CSS with PostCSS
