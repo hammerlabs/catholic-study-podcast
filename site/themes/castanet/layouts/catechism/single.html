@@ -1,0 +1,28 @@
+{{ define "main" }}
+  <article class="episode">
+      <img src="{{ .Params.episode_image | absURL }}" />
+      <div class="date"><em>{{ dateFormat "Monday, Jan 2, 2006" .Date }}</em></div>
+      <div class="title"><a href="{{ .Permalink }}">Episode {{ title .Title }}</a></div>
+      <p>{{ .Description | markdownify }}</p>
+      <audio controls preload="metadata">
+        <source src="{{ $.Site.Params.media_prefix }}{{ .Params.podcast_file }}" type="audio/mpeg">
+      </audio>
+      <!-- AddToAny BEGIN -->
+      <div class="a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="{{ .Permalink }}"
+        data-a2a-title="Catholic Study Podcast: Episode {{ title .Title }}">
+        <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+        <a class="a2a_button_facebook"></a>
+        <a class="a2a_button_twitter"></a>
+        <a class="a2a_button_google_plus"></a>
+        <a class="a2a_button_pinterest"></a>
+        <a class="a2a_button_email"></a>
+        <a class="a2a_button_google_gmail"></a>
+        <a class="a2a_button_copy_link"></a>
+      </div>
+      <!-- AddToAny END -->
+    </article>
+    <div class="episodeNextPrev">
+      {{if .PrevInSection}}<a href="{{.PrevInSection.Permalink}}">← {{.PrevInSection.Title}}</a>{{end}}
+      {{if .NextInSection}}<a href="{{.NextInSection.Permalink}}">{{.NextInSection.Title}} →</a>{{end}}
+    </div>
+{{ end }}

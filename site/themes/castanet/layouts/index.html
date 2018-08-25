@@ -2,7 +2,7 @@
 <div class="content">
 <p>{{ .Site.Params.Description }}</p>
 <section class="episode-list">
-{{- range (where .Data.Pages "Type" "episode") -}}
+{{- range (where .Data.Pages "Type" "bible-study") -}}
   <article class="episode">
     <img src="{{ .Params.episode_image | absURL }}" />
     <div class="date"><em>{{ dateFormat "Monday, Jan 2, 2006" .Date }}</em></div>
