@@ -1,4 +1,5 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<base href="{{ $.Site.BaseURL }}">
 <meta charset="utf-8">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
@@ -25,14 +26,9 @@
 </title>
 <link rel="canonical" href="{{ .Permalink }}">
 {{ block "favicon" . }}{{ partial "favicon" . }}{{end}}
-{{ if isset $.Site.Params "site_theme"}}
+<!-- {{ if isset $.Site.Params "site_theme"}}
 <link href="{{ printf "css/%s.css" $.Site.Params.site_theme | absURL}}" rel="stylesheet">
 {{ else }}
 <link href={{"css/orange.css" | absURL }} rel="stylesheet">
-{{ end }}
-<link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
+{{ end }} -->
 <link href={{"css/main.css" | absURL }} rel="stylesheet">
-<!-- Custom CSS -->
-{{ range .Site.Params.custom_css }}
-<link href="{{ . | absURL }}" rel="stylesheet">
-{{ end }}

@@ -3,7 +3,7 @@ languageCode = "en-us"
 languageLang = "en"
 Title = "Catholic Study Podcast"
 theme = "castanet"
-disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+# disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
 paginate = "9"
 
@@ -14,52 +14,11 @@ googleAnalytics = "UA-124193081-1"
 	about = "/:filename/"
 	episode = "/:filename/"
 
-
-# The theme supports menus with up to one submenu per menu item
-# The menu name must be "Main"
-# The menus are sorted based upon their identifier
-[[Menu.Main]]
-    name = "About"
-    identifier = "about"
-    url = "about"
-
-# [[Menu.Main]]
-#     name = "Contact"
-#     identifier = "contact"
-#     url = "contact"
-
-# [[Menu.Main]]
-#     name = "Hosts"
-#     identifier = "hosts"
-#     url = "host"
-
-# [[Menu.Main]]
-#     name = "Guests"
-#     identifier = "guests"
-#     url = "guest"
-
-# [[Menu.Main]]
-#     name = "Resources"
-#     identifier = "resources"
-#     url = "#!"
-
-# [[Menu.Main]]
-#     name = "Books"
-#     identifier = "books"
-#     url = "books"
-#     parent = "resources"
-# [[Menu.Main]]
-#     name = "Podcasts"
-#     identifier = "podcasts"
-#     url = "books"
-#     parent = "resources"
-
 [params]
 author = "Kevin Hammer"
 description = "Study sacred scripture with a focus on historical context and interpretation. What did the scriptures mean to those to whom it was written? That's the key to knowing what it means to us today!"
 site_description = "Study sacred scripture with a focus on historical context and interpretation. What did the scriptures mean to those to whom it was written? That's the key to knowing what it means to us today!"
 site_theme = "grey"
-custom_css = [ "css/override.css" ]
 site_layout = "row"
 enable_jumbo = "false"
 # truncate = "100"
@@ -115,26 +74,3 @@ media_prefix = "https://media.catholicstudypodcast.com/episodes/"
         # pinterest = "mattstratton"
         # instagram = "instagram"
         # youtube = "mattstratton"
-#     [params.authors.Trevor]
-# 			name = "Trevor Hess"
-# 			thumbnail = "https://www.arresteddevops.com/img/trevor.png"
-# 			bio = ""
-# 				[params.authors.Trevor.social]
-# 					twitter = "trevorghess"
-#     [params.authors.Bridget]
-#       name = "Bridget Kromhout"
-#       thumbnail = "https://www.arresteddevops.com/img/Bridget.png"
-#       bio = ""
-#       [params.authors.Bridget.social]
-#         twitter = "bridgetkromhout"
-
-#     [params.links]
-#       [params.links.ado]
-#         name = "Arrested DevOps"
-#         url = "https://www.arresteddevops.com"
-#       [params.links.ffs]
-#         name = "Food Fight Show"
-#         url = "https://foodfightshow.org"
-#       [params.links.sdt]
-#         name = "Software Defined Talk"
-#         url = "https://cote.io/podcasts/sdt/"

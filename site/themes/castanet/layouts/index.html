@@ -1,13 +1,16 @@
 {{ define "main" }}
-
-{{ if isset $.Site.Params "site_layout" }}
-  {{ if eq $.Site.Params.site_layout "grid" }}
-    {{- partial "grid.html" . }}
-  {{ else }}
-    {{- partial "row.html" . }}
-  {{ end }}
-{{ else }}
-  {{- partial "row.html" . }}
-{{ end }}
-
+<div class="content">
+<p>{{ .Site.Params.Description }}</p>
+<section class="episode-list">
+{{- range (where .Data.Pages "Type" "episode") -}}
+  <article class="episode">
+    <img src="{{ .Params.episode_image | absURL }}" />
+    <div class="date"><em>{{ dateFormat "Monday, Jan 2, 2006" .Date }}</em></div>
+    <div class="title"><a href="{{ .Permalink }}">Episode {{ title .Title }}</a></div>
+    <p>{{ .Description | markdownify }}</p>
+    <audio controls src="{{ $.Site.Params.media_prefix }}{{ .Params.podcast_file }}" preload="auto"/>
+  </article>  
+{{- end -}}
+</section> 
+</div>
 {{ end }}

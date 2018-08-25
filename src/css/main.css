@@ -1,14 +1,45 @@
-/*
-  You can use import statements to include partials:
- */
 @import "imports/reset.css";
-
-
-/*
-  Or add your statements here:
- */
-body{
-  font-family: sans-serif;
+body {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-size: 1em;
   text-align: center;
+  margin: 10px;
+}
+
+article.episode {
+  margin-bottom: 20px;
+  padding: 1.25em 1.5em 1.5em;
+  background: #f8f8f8;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+  text-align: left;
+}
+
+article.episode .date {
+  font-weight: 200;
+  margin-bottom: 0.2em;
+}
+
+article.episode .title {
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  font-size: 1.125em;
+}
+
+article.episode p {
+  font-size: 1em;
+  line-height: 1.4em;
+  margin-bottom: 1em;
+}
+
+article.episode audio {
+  width: 100%;
+}
+
+article.episode img {
+  border: 1px solid black;
+  float: left;
+  width: 20%;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
 }
