@@ -31,7 +31,7 @@ about_logo = "/img/kevin.jpg"
 # pocketcasts_subscribe = "http://pcasts.in/feed/feeds.soundcloud.com/users/soundcloud:users:203144248/sounds.rss"
 # mailchimp_subscribe = "//arresteddevops.us3.list-manage.com/subscribe/post?u=5e4cbcac996bb9df25f970a89&amp;id=154fa76bcc"
 #rss_subscribe = "http://feed.com/myfeed" #only set this if you don't want to use the built-in feed
-media_prefix = "https://media.catholicstudypodcast.com/episodes/"
+media_prefix = "https://media.catholicstudypodcast.com/bible-study/"
   [params.feed]
   # itunes rss details: https://help.apple.com/itc/podcasts_connect/#/itcb54353390
     feed_base_url = "https://www.catholicstudypodcast.com/"
