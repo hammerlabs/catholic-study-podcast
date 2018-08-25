@@ -45,7 +45,7 @@
       <itunes:category text="{{ . }}" />
       {{- end -}}
     </itunes:category>
-    {{- range (where .Site.Pages "Type" "episode") -}}
+    {{- range (where .Site.Pages "Type" "bible-study") -}}
       {{ if isset .Params "podcast_file" }}
         <item>
           <title>{{ title .Title }}</title>
@@ -66,7 +66,7 @@
           {{- with .Content -}}
           {{ "<content:encoded><![CDATA[" | safeHTML }}{{ .Content | safeHTML }}{{"]]></content:encoded>" | safeHTML}}
           {{- end -}}
-          {{- with .Params.episode_image -}}
+          {{- with .Params.episode_cover -}}
           <itunes:image href="{{ . | absURL }}"></itunes:image>
           <googleplay:image href="{{ . | absURL }}"></googleplay:image>
           {{- end -}}
