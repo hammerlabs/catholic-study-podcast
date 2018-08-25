@@ -4,6 +4,7 @@
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href="/episode/index.xml" />
 {{ if .Description}}
 <meta name="description" content="{{ .Description }}">
 {{ else }}
@@ -26,9 +27,4 @@
 </title>
 <link rel="canonical" href="{{ .Permalink }}">
 {{ block "favicon" . }}{{ partial "favicon" . }}{{end}}
-<!-- {{ if isset $.Site.Params "site_theme"}}
-<link href="{{ printf "css/%s.css" $.Site.Params.site_theme | absURL}}" rel="stylesheet">
-{{ else }}
-<link href={{"css/orange.css" | absURL }} rel="stylesheet">
-{{ end }} -->
 <link href={{"css/main.css" | absURL }} rel="stylesheet">

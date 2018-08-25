@@ -1,17 +1,39 @@
 @import "imports/reset.css";
 body {
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-family: Palatino, Georgia, 'Times New Roman', serif;
   font-size: 1em;
   text-align: center;
   margin: 10px;
 }
 
+a, a:visited {
+  color: black;
+}
+
+header h1 a {
+  text-decoration: none;
+}
+
+header h1 a span {
+  position: relative;
+  top: -35px;
+  color: black;
+}
+
+header img.logo {
+  width: 3em;
+}
+
+header img.rss {
+  width: 2em;
+}
+
 article.episode {
   margin-bottom: 20px;
   padding: 1.25em 1.5em 1.5em;
-  background: #f8f8f8;
+  background: #8da190;
   border-radius: 4px;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #000000;
   text-align: left;
 }
 
@@ -43,4 +65,14 @@ article.episode img {
   margin-right: 0.5em;
   margin-bottom: 0.5em;
   max-width: 180px;
+}
+
+div.episodeNextPrev a {
+  text-decoration: none;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  color: black;
+  padding: 0.5em;
+  font-weight: 700;
 }
