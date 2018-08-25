@@ -1,4 +1,4 @@
 +++
 title = "Catholic Study Podcast"
-images = ["https://www.catholicstudypodcast.com/apple-touch-icon.png"]
+images = ["https://www.catholicstudypodcast.com/logo.png"]
 +++
